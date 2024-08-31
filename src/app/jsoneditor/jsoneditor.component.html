@@ -1,0 +1,6 @@
+<div class="component">
+    <div class="highlighted-content" [innerHTML]="highlightedJson"></div>
+    <textarea name="json" id="json" cols="80" rows="20" [(ngModel)]="jsonInput"
+        (keydown)="handleKeyDown($event)" (input)="onInput($event)" spellcheck="false"></textarea>
+    <p>{{validationMessage}}</p>
+</div>

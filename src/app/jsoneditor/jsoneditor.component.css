@@ -1,0 +1,23 @@
+.component {
+    position: relative;
+}
+
+.highlighted-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: transparent;
+    z-index: 1;
+}
+
+textarea {
+    position: relative;
+    background: transparent;
+    z-index: 2;
+    color: black; /* Default text color */
+}
