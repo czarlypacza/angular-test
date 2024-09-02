@@ -3,4 +3,10 @@
     <textarea name="json" id="json" cols="80" rows="20" [(ngModel)]="jsonInput"
         (keydown)="handleKeyDown($event)" (input)="onInput($event)" spellcheck="false"></textarea>
     <p>{{validationMessage}}</p>
+
+    <div class="jsoneditor" (click)="onClick($event)" >
+        <div class="test" (keydown)="onKeyInput($event)" contenteditable="true"></div>
+    </div>
+
+    
 </div>

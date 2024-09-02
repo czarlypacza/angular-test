@@ -12,7 +12,7 @@
     white-space: pre-wrap;
     word-wrap: break-word;
     color: transparent;
-    z-index: 1;
+    z-index: 3;
 }
 
 textarea {
@@ -21,3 +21,17 @@ textarea {
     z-index: 2;
     color: black; /* Default text color */
 }
+
+.test:first-child{
+    display: none;
+}
+
+.test{
+    margin-inline:5rem;
+    caret: black ;
+}
+
+.test:focus {
+    caret: black;
+}
+
